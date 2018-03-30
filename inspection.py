@@ -16,7 +16,7 @@ class Inspection(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
         cp = ConfigParser.SafeConfigParser()
-        cp.read('ip.conf') 
+        cp.read('conf/ip.cnf') 
         self.ip_list = cp.sections()
     	self.backup_file = ["nginx", "oracle", "mysql", "tomcat"]
     
